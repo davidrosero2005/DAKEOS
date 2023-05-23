@@ -1,0 +1,156 @@
+*{
+	MARGIN:  0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1{
+	color: #515A5A ;
+	font-size:   80PX;
+	text-shadow: 0px 20px 7px #839192;
+	font-family: impact;
+}
+body{
+	padding: 2cm;
+	background-image: url(pizarra.jpg);
+	font-size: 30px ;
+	background-repeat: repeat-y;
+	background-size: 100vw 100vh;
+	height: 20cm;
+}
+.contenedor{
+	text-align: center;
+	padding: 2cm;
+	background-image: url(tutle.jpg);
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;	
+}
+.btn-menu{
+	line-height: 60px;
+}
+.btn-menu label{
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+}
+.btn-menu label:hover{
+	color: aqua;
+}
+#btn-menu{
+	display: none;
+}
+.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 160vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width:350px;
+		background: #1c1c1c;
+		height: 160vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 30px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	#h7{
+        font-size: 20px;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+		font-size: 18px;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 20px; 
+	}
+	.contenedor .pie{
+	    padding: 10cm;
+	    background-image: url(negro.jpg);
+	    background-repeat: no-repeat;
+	    background-size: 100vw 200vh;	
+	}
+section{
+	height: 50rem;
+}
+.box{
+	height: 60px;
+	display: flex;
+	margin-left: 88%;
+}
+.pie-pagina{
+    width: 100%;
+    height: 200px;
+    background-image: url(pie.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    font-family: arial;
+	color: #fff;
+	text-align: center;
+	padding: 1cm;
+	font-size: 18px;
+}
+.pie-pagina .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    color: #17202A ;
+    background-color: #D5DBDB ;
+    text-align: center;
+    transition: all 20ms ease;
+    font-size: 25px;
+}
+.pie-pagina .red-social a:hover{
+	color: aqua;
+}
+p{
+	text-align:  center;
+	font-family:"century gothic";
+	text-shadow: 0px 3px 6px #fff;
+	color: #fff;
+}
+h2{
+	text-align: center;
+	font-family: courier;
+	background-image: url(blanco.jpg);
+	padding: 6px;
+	background-size: 60vw 100vh;
+}
+.u{
+	font-size: 14px;
+}
+legend{
+background-color: transparent;
+}
+#formulario{
+	text-shadow: none;
+}
